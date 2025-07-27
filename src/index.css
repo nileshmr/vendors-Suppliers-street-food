@@ -1,0 +1,32 @@
+/* Fade-in animation for dashboard cards */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.8s cubic-bezier(.4,0,.2,1);
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.8s cubic-bezier(.4,0,.2,1);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+}
+
+@keyframes vendor-bg {
+  0%, 100% { background-color: #22c55e; }
+  50% { background-color: #16a34a; }
+}
+
+.animate-vendor-bg {
+  animation: vendor-bg 2s infinite;
+}
